@@ -28,10 +28,24 @@
    go build -o gfd cmd/main.go
    ```
 
+### 전역 설치
+
+1. 빌드된 `gfd` 실행 파일을 전역적으로 사용할 수 있도록 이동합니다.
+
+   ```bash
+   sudo mv gfd /usr/local/bin/
+   ```
+
+2. 실행 권한을 설정합니다.
+
+   ```bash
+   sudo chmod +x /usr/local/bin/gfd
+   ```
+
 ## 사용법
 
 빌드 후 `gfd` 실행 파일을 사용하여 특정 GitHub 레포지토리의 하위 폴더를 다운로드할 수 있습니다.
 
 ```bash
-./gfd -url <GitHub URL> -output <Output Directory>
+gfd -url <GitHub URL> -output <Output Directory>
 ```
